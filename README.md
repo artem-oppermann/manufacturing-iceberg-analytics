@@ -3,7 +3,7 @@
 
 A real-time manufacturing quality inspection data pipeline that demonstrates streaming analytics with Redpanda (Kafka-compatible) and Apache Iceberg using PyIceberg for time-travel analytics and ACID transactions.
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 [Quality Inspections] → [Redpanda Topic] → [PyIceberg Writer] → [Iceberg Table] → [Analytics]
@@ -11,7 +11,7 @@ A real-time manufacturing quality inspection data pipeline that demonstrates str
                                                               [MinIO S3 Storage]
 ```
 
-## ✨ Features
+## Features
 
 - **Real-time Streaming**: Quality inspection events streamed through Redpanda
 - **ACID Transactions**: Atomic commits to Iceberg tables with PyIceberg
@@ -20,7 +20,7 @@ A real-time manufacturing quality inspection data pipeline that demonstrates str
 - **Manufacturing Analytics**: Comprehensive quality control analytics
 - **Scalable Storage**: MinIO S3-compatible object storage backend
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -95,7 +95,7 @@ The pipeline provides detailed manufacturing insights:
 - **Environmental Correlations**: Temperature, humidity, and line speed impact
 - **Executive Summary**: Key findings and recommendations
 
-## 🛠️ Pipeline Components
+## Pipeline Components
 
 ### Core Files
 
@@ -147,7 +147,7 @@ The quality inspection events include:
 - **Format**: Parquet with GZIP compression
 - **Warehouse**: `s3://inspection-data/warehouse`
 
-## 📈 Sample Analytics Output
+## Sample Analytics Output
 
 ```
 📊 HOURLY PRODUCTION ANALYSIS:
@@ -163,7 +163,7 @@ Hour                 Throughput   Defects    Rate %   Speed    Temp°C   Humid%
   Defect Rate: 🔴 Worsening (1.6% per hour)
 ```
 
-## 🎯 Use Cases
+## Use Cases
 
 - **Real-time Quality Monitoring**: Track defect rates as they happen
 - **Root Cause Analysis**: Correlate defects with environmental factors
@@ -172,7 +172,7 @@ Hour                 Throughput   Defects    Rate %   Speed    Temp°C   Humid%
 - **Historical Analysis**: Time-travel queries for trend analysis
 - **Regulatory Compliance**: Immutable audit trail of quality data
 
-## 🛡️ Data Reliability
+## Data Reliability
 
 - **ACID Transactions**: Guaranteed data consistency with Iceberg
 - **Schema Evolution**: Safe schema changes without breaking existing data
@@ -180,7 +180,7 @@ Hour                 Throughput   Defects    Rate %   Speed    Temp°C   Humid%
 - **Atomic Commits**: Batch processing with rollback capabilities
 - **Partition Pruning**: Efficient queries with date-based partitioning
 
-## 🔍 Troubleshooting
+## Troubleshooting
 
 ### Check Table Status
 ```bash
@@ -206,18 +206,18 @@ docker-compose up -d
 python setup_pipeline.py
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
 3. Test your changes with sample data
 4. Submit a pull request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙋‍♂️ Support
+## Support
 
 For questions or issues:
 - Check the troubleshooting section
@@ -227,4 +227,3 @@ For questions or issues:
 
 ---
 
-**Built with ❤️ for modern data engineering**
